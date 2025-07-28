@@ -1,0 +1,24 @@
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.card {
+  background-color: #8a828a; /* Consider using a lighter shade */
+  border: 1px solid #ccc;
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}

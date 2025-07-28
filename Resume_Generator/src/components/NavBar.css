@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(236, 233, 231);
+  border: 1px solid rgb(19, 1, 1);
+  box-shadow: 0 2px 4px lightgray;
+  padding: 1rem;
+  top:0;
+  position: sticky;
+  z-index: 5;
+}
+.logo{
+    font-size: 2rem;
+    color:rgb(23, 21, 22);
+    
+}
+.navlinks {
+  display: flex;
+  gap: 20px;
+  
+}
+a{
+    text-decoration: none;
+    color:black;
+    font-size: 1rem;
+}
+a:hover{
+    color: rgb(28, 145, 184);
+}

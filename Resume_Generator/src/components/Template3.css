@@ -1,0 +1,229 @@
+.grid-resume-container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      font-family: 'Georgia', serif;
+      line-height: 1.5;
+      color: #333;
+    }
+
+
+    .grid-resume {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-template-rows: auto auto 1fr;
+      gap: 30px;
+      min-height: 100vh;
+    }
+
+
+    .header-section {
+      grid-column: 1 / -1;
+      text-align: center;
+      padding: 30px 0;
+      border-bottom: 3px solid #333;
+    }
+
+
+    .name {
+      font-size: 36px;
+      font-weight: normal;
+      margin: 0 0 10px 0;
+      letter-spacing: 2px;
+      text-transform: capitalize;
+    }
+
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 10px;
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+
+    .contact-item {
+      padding: 5px 0;
+    }
+
+
+    .sidebar {
+      background-color: #f8f9fa;
+      padding: 25px;
+      border-radius: 8px;
+    }
+
+
+    .main-content {
+      padding: 25px;
+    }
+
+
+    .sec {
+      margin-bottom: 35px;
+    }
+
+
+    .section-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #2c3e50;
+      position: relative;
+      padding-bottom: 8px;
+    }
+
+
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 50px;
+      height: 2px;
+      background-color: #3498db;
+    }
+
+
+    .sidebar .section-title::after {
+      width: 30px;
+    }
+
+
+    .summary-text {
+      font-size: 16px;
+      text-align: justify;
+      font-style: italic;
+      margin: 0;
+    }
+
+
+    .experience-item {
+      margin-bottom: 25px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #eee;
+    }
+
+
+    .experience-item:last-child {
+      border-bottom: none;
+    }
+
+
+    .job-header {
+      margin-bottom: 10px;
+    }
+
+
+    .position {
+      font-size: 18px;
+      font-weight: bold;
+      margin: 0;
+      color: #2c3e50;
+    }
+
+
+    .company-duration {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 5px;
+      font-size: 14px;
+      color: #666;
+    }
+
+
+    .company {
+      font-weight: 500;
+    }
+
+
+    .duration {
+      font-style: italic;
+    }
+
+
+    .description {
+      margin: 10px 0 0 0;
+      font-size: 15px;
+    }
+
+
+    .education-item {
+      margin-bottom: 20px;
+    }
+
+
+    .school {
+      font-size: 16px;
+      font-weight: bold;
+      margin: 0 0 5px 0;
+      color: #2c3e50;
+    }
+
+
+    .education-details {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 5px;
+    }
+
+
+    .grade {
+      font-size: 14px;
+      margin: 0;
+    }
+
+
+    .project-item {
+      margin-bottom: 20px;
+      padding: 15px;
+      background-color: #f8f9fa;
+      border-radius: 5px;
+    }
+
+
+    .project-name {
+      font-size: 16px;
+      font-weight: bold;
+      margin: 0 0 8px 0;
+      color: #2c3e50;
+    }
+
+
+    .technologies {
+      font-size: 13px;
+      color: #3498db;
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+
+
+    .project-description {
+      font-size: 14px;
+      margin: 0;
+    }
+
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 8px;
+    }
+
+
+    .skill-item {
+      background-color: #fff;
+      padding: 8px 12px;
+      border-radius: 20px;
+      font-size: 13px;
+      text-align: center;
+      border: 1px solid #ddd;
+    }
+    .skill-item:hover {
+      background-color: #3498db;
+      color: white;
+      cursor: pointer;
+    }

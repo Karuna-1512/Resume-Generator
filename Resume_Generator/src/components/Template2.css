@@ -1,0 +1,257 @@
+/* Resume.css */
+
+
+.resume-container {
+  padding: 20px;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+}
+
+
+.resume {
+  max-width: 800px;
+  width: 100%;
+  background-color: white;
+  padding: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+
+/* Header Styles */
+.header {
+  text-align: center;
+  border-bottom: 2px solid #333;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+
+.name {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0 0 15px 0;
+  color: #2c3e50;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+.contact-info {
+  font-size: 14px;
+  color: #666;
+}
+
+
+.contact-row {
+  margin-bottom: 5px;
+}
+
+
+.contact-row span {
+  margin: 0 15px;
+}
+
+
+.contact-row span:first-child {
+  margin-left: 0;
+}
+
+
+.contact-row span:last-child {
+  margin-right: 0;
+}
+
+
+/* Section Styles */
+.section {
+  margin-bottom: 30px;
+}
+
+
+.section-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2c3e50;
+  border-bottom: 1px solid #bdc3c7;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+
+/* Summary Styles */
+.summary-text {
+  font-size: 15px;
+  text-align: justify;
+  margin: 0;
+}
+
+
+/* Experience Styles */
+.experience-item {
+  margin-bottom: 20px;
+}
+
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+
+.position-company {
+  flex: 1;
+}
+
+
+.position {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 0 3px 0;
+  color: #34495e;
+}
+
+
+.company {
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+  color: #7f8c8d;
+  font-style: italic;
+}
+
+
+.duration {
+  font-size: 14px;
+  color: #7f8c8d;
+  font-weight: bold;
+  white-space: nowrap;
+  margin-left: 20px;
+}
+
+
+.description {
+  font-size: 14px;
+  margin: 0;
+  text-align: justify;
+}
+
+
+/* Education Styles */
+.education-item {
+  margin-bottom: 15px;
+}
+
+
+.education-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+
+.school {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+  color: #34495e;
+}
+
+
+.grade {
+  font-size: 14px;
+  margin: 0;
+  color: #666;
+}
+
+
+/* Project Styles */
+.project-item {
+  margin-bottom: 20px;
+}
+
+
+.project-name {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 0 5px 0;
+  color: #34495e;
+}
+
+
+.technologies {
+  font-size: 14px;
+  margin: 0 0 5px 0;
+  color: #666;
+}
+
+
+.technologies strong {
+  color: #333;
+}
+
+
+/* Skills Styles */
+.skills-text {
+  font-size: 14px;
+  margin: 0;
+  text-align: justify;
+}
+
+
+/* Print Styles */
+@media print {
+  .resume-container {
+    background-color: white;
+    padding: 0;
+  }
+ 
+  .resume {
+    box-shadow: none;
+    padding: 0;
+    max-width: none;
+  }
+ 
+  .section {
+    break-inside: avoid;
+  }
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .resume {
+    padding: 20px;
+  }
+ 
+  .name {
+    font-size: 28px;
+  }
+ 
+  .contact-row span {
+    display: block;
+    margin: 2px 0;
+  }
+ 
+  .experience-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+ 
+  .duration {
+    margin-left: 0;
+    margin-top: 5px;
+  }
+ 
+  .education-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
